@@ -23,15 +23,17 @@ export default createGlobalStyle`
 
   h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 24px;
     color: ${({ theme }) => theme.colors.lightGray};
   }
 
   h2 {
-    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 24px;
+    color: ${({ theme }) => theme.colors.lightGray};
   }
 
   h3 {

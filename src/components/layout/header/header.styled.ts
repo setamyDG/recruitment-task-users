@@ -12,17 +12,21 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   z-index: ${zIndex.level9};
+
   ${media.tablet} {
     justify-content: center;
   }
 `;
 
-const Title = styled.p`
+const Title = styled.h1`
   position: absolute;
   font-family: 'Inter' sans-serif;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: ${({ theme }) => theme.colors.darkGray};
+
   ${media.tablet} {
     display: none;
   }

@@ -22,6 +22,7 @@ const SpinnerWrapper = styled.div<{ inline?: boolean }>`
       top: 50%;
       left: 50%;
       transform: translate(-150%, -50%);
+
       ${media.phone} {
         transform: translate(-50%, -50%);
       }

@@ -7,6 +7,7 @@ const StyledDots = styled(SmallDots)`
   position: absolute;
   left: 20%;
   top: 25%;
+
   ${media.tablet} {
     display: none;
   }
@@ -16,6 +17,7 @@ const StyledBigDots = styled(Dots)`
   position: absolute;
   right: 20%;
   bottom: 25%;
+
   ${media.tablet} {
     display: none;
   }
@@ -28,6 +30,7 @@ const StyledFooter = styled.footer`
   justify-content: center;
   flex-flow: column;
   position: relative;
+
   ${media.phone} {
     margin-left: 65px;
   }

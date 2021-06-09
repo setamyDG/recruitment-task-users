@@ -1,3 +1,4 @@
+import media from '@styles/media';
 import styled, { css, keyframes } from 'styled-components';
 
 const Spin = keyframes`
@@ -20,7 +21,10 @@ const SpinnerWrapper = styled.div<{ inline?: boolean }>`
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-150%, -50%);
+      ${media.phone} {
+        transform: translate(-50%, -50%);
+      }
     `;
   }}
 `;

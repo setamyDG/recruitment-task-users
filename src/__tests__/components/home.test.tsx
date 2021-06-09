@@ -15,22 +15,6 @@ beforeAll(() => {
 });
 
 describe('Card', () => {
-  it('render with incorrect data', async () => {
-    const mockedAxios = axios as jest.Mocked<typeof axios>;
-    mockedAxios.get.mockRejectedValueOnce({});
-
-    const { getByText } = render(<Card id={1} name='' username='' />);
-
-    await waitFor(
-      () => {
-        const tryToRefreshLabel = getByText('Try to refresh');
-
-        expect(tryToRefreshLabel).toBeInTheDocument();
-      },
-      { timeout: 2000 }
-    );
-  });
-
   it.each([['Daniel Gola'], ['@nick'], ['Phone: 321'], ['Company: Firma']])(
     'render with correct data',
     async (expectedValues) => {

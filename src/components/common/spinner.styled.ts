@@ -20,7 +20,7 @@ const SpinnerWrapper = styled.div<{ inline?: boolean }>`
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-140%, -50%);
+      transform: translate(-50%, -50%);
     `;
   }}
 `;

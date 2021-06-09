@@ -33,7 +33,7 @@ export default createGlobalStyle`
     font-size: 2rem;
     font-weight: bold;
     line-height: 24px;
-    color: ${({ theme }) => theme.colors.lightGray};
+    color: ${({ theme }) => theme.colors.darkGray};
   }
 
   h3 {

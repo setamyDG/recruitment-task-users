@@ -1,6 +1,15 @@
+import media from '@styles/media';
 import styled from 'styled-components';
 
-export default styled.button`
+const Wrapper = styled.div`
+  ${media.phone} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+const StyledButton = styled.button`
   background: ${({ theme }) => theme.colors.blue};
   color: ${({ theme }) => theme.colors.white};
   padding: 15px 40px;
@@ -13,3 +22,5 @@ export default styled.button`
     box-shadow: ${({ theme }) => theme.boxShadow.dp_3};
   }
 `;
+
+export { Wrapper, StyledButton };

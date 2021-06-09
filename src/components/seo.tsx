@@ -7,27 +7,29 @@ type Props = {
 
 const SEO: FC<Props> = ({ title }) => (
   <Helmet>
-    <base />
     <title>{title}</title>
-    <meta
-      name='description'
-      content='React application written in Typescript what allows to filter users taken from API'
-    />
-    <meta property='og:title' content='DG - React recruitment task' />
-    <meta property='og:type' content='website' />
-    <meta property='twitter:card' content='summary' />
-    <meta property='twitter:creator' content='Daniel Gola' />
-    <meta property='twitter:title' content='DG - React recruitment task' />
+    <meta name='title' content='React - Recruitment task' data-react-helmet='true' />
+    <meta property='og:title' content='DG - React recruitment task' react-helmet-data='true' />
+    <meta property='og:type' content='website' react-helmet-data='true' />
+    <meta property='twitter:card' content='summary' react-helmet-data='true' />
+    <meta property='twitter:creator' content='Daniel Gola' react-helmet-data='true' />
+    <meta property='twitter:title' content='DG - React recruitment task' react-helmet-data='true' />
     <meta
       property='twitter:description'
       content='React application written in Typescript what allows to filter users taken from API'
+      react-helmet-data='true'
     />
     <meta
       property='og:description'
       content='React application written in Typescript what allows to filter users taken from API'
+      react-helmet-data='true'
     />
-    <meta name='viewport' content='width=device-width, initial-scale=1' />
-    <meta name='theme-color' content='#000000' />
+    <meta name='theme-color' content='#000000' react-helmet-data='true' />
+    <meta
+      name='description'
+      content='React application written in Typescript what allows to filter users taken from API'
+      react-helmet-data='true'
+    />
     <link href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap' rel='stylesheet' />
     <link href='https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap' rel='stylesheet' />
   </Helmet>

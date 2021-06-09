@@ -8,7 +8,6 @@ type HeaderProps = {
   ref: HTMLDivElement;
 };
 
-// eslint-disable-next-line react/display-name
 const Header = forwardRef<Ref, HeaderProps>((_, ref) => (
   <StyledHeader ref={ref}>
     <NavLink to='/'>
@@ -17,5 +16,7 @@ const Header = forwardRef<Ref, HeaderProps>((_, ref) => (
     <Title>Recruitment task</Title>
   </StyledHeader>
 ));
+
+Header.displayName = 'Header';
 
 export default Header;

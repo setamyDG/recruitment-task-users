@@ -60,7 +60,6 @@ type NavigationProps = {
   ref: HTMLDivElement;
 };
 
-// eslint-disable-next-line react/display-name
 const Navigation = forwardRef<Ref, NavigationProps>((_, ref) => (
   <StyledNav ref={ref}>
     <div>
@@ -73,5 +72,7 @@ const Navigation = forwardRef<Ref, NavigationProps>((_, ref) => (
     </div>
   </StyledNav>
 ));
+
+Navigation.displayName = 'Navigation';
 
 export default Navigation;

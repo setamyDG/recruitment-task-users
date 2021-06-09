@@ -25,7 +25,7 @@ export default createGlobalStyle`
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     line-height: 24px;
-    color: ${({ theme }) => theme.colors.lightGray};
+    color: ${({ theme }) => theme.colors.darkGray};
   }
 
   h2 {

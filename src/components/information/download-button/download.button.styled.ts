@@ -17,6 +17,7 @@ const StyledButton = styled.button`
   outline: none;
   margin-top: 50px;
   transition: 0.3s box-shadow ease-in-out;
+
   :hover {
     cursor: pointer;
     box-shadow: ${({ theme }) => theme.boxShadow.dp_3};

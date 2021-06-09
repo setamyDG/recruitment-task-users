@@ -6,6 +6,7 @@ const StyledCard = styled.div`
   position: relative;
   min-height: 400px;
   transition: 0.3s box-shadow ease-in-out;
+
   :hover {
     cursor: pointer;
     box-shadow: ${({ theme }) => theme.boxShadow.dp_3};

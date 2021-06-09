@@ -38,8 +38,7 @@ const Number = styled.div`
 `;
 
 const UpperContainer = styled.div`
-  height: 50%;
-  width: 100%;
+  min-height: 200px;
   background: ${({ theme }) => theme.colors.lightGray};
   position: relative;
   display: flex;

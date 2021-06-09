@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
+import { PDF } from '@constants/urls';
 import { StyledButton, Wrapper } from './download.button.styled';
 
 const DownloadButton: FC = () => (
   <Wrapper>
-    <a href='./React - Zadanie rekrutacyjne.pdf' target='_blank' download>
+    <a href={PDF} target='_blank' rel='noopener noreferrer' download>
       <StyledButton>Download PDF</StyledButton>
     </a>
   </Wrapper>

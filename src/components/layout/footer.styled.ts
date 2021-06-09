@@ -5,7 +5,7 @@ import media from '@styles/media';
 
 const StyledDots = styled(SmallDots)`
   position: absolute;
-  left: 25%;
+  left: 20%;
   top: 25%;
   ${media.tablet} {
     display: none;
@@ -14,7 +14,7 @@ const StyledDots = styled(SmallDots)`
 
 const StyledBigDots = styled(Dots)`
   position: absolute;
-  right: 25%;
+  right: 20%;
   bottom: 25%;
   ${media.tablet} {
     display: none;

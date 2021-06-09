@@ -1,4 +1,4 @@
-import { API_URL } from '@constants/api_url';
+import { API_URL } from '@constants/urls';
 
 export type User = [
   {

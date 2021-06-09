@@ -1,3 +1,5 @@
 {
-  "*.{js,ts,tsx}": "eslint --cache --fix"
+"src/**/*.{js,ts,jsx,tsx}": [
+"npm run lint"
+  ]
 }

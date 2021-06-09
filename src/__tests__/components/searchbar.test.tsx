@@ -1,6 +1,6 @@
 import React from 'react';
 import { Searchbar } from '@components/home';
-import { render } from '../utils/test-utils';
+import { render } from '../__utils__/test-utils';
 
 describe('Searchbar', () => {
   it('should render', () => {

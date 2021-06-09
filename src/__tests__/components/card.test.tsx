@@ -4,7 +4,7 @@ import { waitFor } from '@testing-library/react';
 import { setLogger } from 'react-query';
 import axios from 'axios';
 import { User } from '@utils/getUsers';
-import { render } from '../utils/test-utils';
+import { render } from '../__utils__/test-utils';
 
 beforeAll(() => {
   setLogger({

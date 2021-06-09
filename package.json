@@ -34,9 +34,6 @@
     "test:nowatch": "craco test --watchAll=false --testPathIgnorePatterns test-utils.ts",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "prepare": "husky install",
-    "postinstall": "husky install",
     "lint": "eslint --fix"
   },
   "jest": {
@@ -54,6 +51,11 @@
     }
   },
   "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

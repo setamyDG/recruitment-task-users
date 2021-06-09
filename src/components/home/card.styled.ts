@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import zIndex from '@styles/zIndex';
+import media from '@styles/media';
 
 const StyledCard = styled.div`
   border: 2px solid ${({ theme }) => theme.colors.lightGray};
@@ -9,6 +10,10 @@ const StyledCard = styled.div`
   :hover {
     cursor: pointer;
     box-shadow: ${({ theme }) => theme.boxShadow.dp_3};
+  }
+
+  ${media.tablet} {
+    width: 100%;
   }
 `;
 

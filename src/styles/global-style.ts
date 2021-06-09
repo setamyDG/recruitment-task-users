@@ -23,7 +23,7 @@ export default createGlobalStyle`
 
   h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 24px;
     color: ${({ theme }) => theme.colors.lightGray};
   }

@@ -3,6 +3,7 @@ import { ReactComponent as GithubLogo } from '@assets/icons/github.svg';
 import { ReactComponent as LinkedinLogo } from '@assets/icons/linkedin.svg';
 import { ReactComponent as FacebookLogo } from '@assets/icons/facebook.svg';
 import styled from 'styled-components';
+import media from '@styles/media';
 
 const Container = styled.div`
   display: flex;
@@ -20,6 +21,11 @@ const LogoWrapper = styled.div<{ isMarginLeft?: boolean; isMarginRight?: boolean
   margin-left: ${({ isMarginLeft }) => isMarginLeft && '50px'};
   margin-right: ${({ isMarginRight }) => isMarginRight && '50px'};
   transition: 0.3s all ease-in-out;
+
+  ${media.phone} {
+    margin-left: ${({ isMarginLeft }) => isMarginLeft && '10px'};
+    margin-right: ${({ isMarginRight }) => isMarginRight && '10px'};
+  }
 
   :hover {
     cursor: pointer;

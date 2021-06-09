@@ -1,5 +1,3 @@
-import { API_URL } from '@constants/api_url';
-
 export default [
   {
     id: 1,
@@ -8,7 +6,7 @@ export default [
   {
     id: 2,
     description: 'Pobierz listę użytkowników używając ogólnodostępnego API',
-    link: API_URL,
+    link: 'LINK',
   },
   {
     id: 3,

@@ -28,6 +28,7 @@ const StyledFooter = styled.footer`
   justify-content: center;
   flex-flow: column;
   position: relative;
+  margin-left: 65px;
 `;
 
 const Name = styled.p`

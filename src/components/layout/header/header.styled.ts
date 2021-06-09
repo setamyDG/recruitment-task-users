@@ -24,8 +24,6 @@ const Title = styled.h1`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1rem;
-  color: ${({ theme }) => theme.colors.darkGray};
 
   ${media.tablet} {
     display: none;

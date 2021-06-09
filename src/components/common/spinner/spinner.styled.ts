@@ -1,5 +1,5 @@
-import media from '@styles/media';
 import styled, { css, keyframes } from 'styled-components';
+import { media } from '@styles';
 
 const Spin = keyframes`
   0% { transform: rotate(0deg) };

@@ -1,9 +1,5 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
-
-const StyledSection = styled.section`
-  padding: 20px 0px;
-`;
+import StyledSection from './section.styled';
 
 const Section: FC = ({ children }) => <StyledSection>{children}</StyledSection>;
 export default Section;

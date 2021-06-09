@@ -1,6 +1,8 @@
-export { default as Logo } from './logo';
-export { default as SocialMedia } from './social-media';
-export { default as Container } from './container';
-export { default as PageTitle } from './page-title';
-export { default as Section } from './section';
-export { default as ContentWrapper } from './content-wrapper';
+export * from './container';
+export * from './content-wrapper';
+export * from './error-overlay';
+export * from './logo';
+export * from './page-title';
+export * from './section';
+export * from './social-media';
+export * from './spinner';

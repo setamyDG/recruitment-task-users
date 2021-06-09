@@ -1,13 +1,13 @@
 import React, { ChangeEvent, FC, useState } from 'react';
 import { useQuery } from 'react-query';
-import { Container, PageTitle, Section, ContentWrapper } from '@components/common';
 import { getUsers, User } from '@utils/getUsers';
-import { Card, Searchbar, GridContainer } from '@components/home';
 import SEO from '@components/seo';
+import { Container, ContentWrapper, PageTitle, Section } from '@components/common';
+import { Card, GridContainer, Searchbar } from '@components/home';
 
 const Home: FC = () => {
   const [searchValue, setSearchValue] = useState<string>('');
-  const { data, refetch, isError, isLoading } = useQuery<User, Error>('fetchUsers', () => getUsers());
+  const { data, refetch, isError, isLoading } = useQuery<User[], Error>('fetchUsers', () => getUsers());
 
   const handleOnChangeSearchbar = (e: ChangeEvent<HTMLInputElement>): void => {
     setSearchValue(e.target.value);

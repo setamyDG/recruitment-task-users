@@ -1,9 +1,8 @@
 import React, { FC } from 'react';
-import { Container, PageTitle, Section } from '@components/common';
 import { API_URL } from '@constants/urls';
-import { CustomLink, DownloadButton } from '@components/information';
-import steps from '@components/information/steps';
 import SEO from '@components/seo';
+import { Container, PageTitle, Section } from '@components/common';
+import { CustomLink, DownloadButton, steps } from '@components/information';
 
 const Information: FC = () => (
   <>

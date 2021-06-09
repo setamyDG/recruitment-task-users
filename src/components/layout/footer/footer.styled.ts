@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { ReactComponent as Dots } from '@assets/icons/big-dots.svg';
 import { ReactComponent as SmallDots } from '@assets/icons/small-dots.svg';
-import media from '@styles/media';
+import { media } from '@styles';
 
 const StyledDots = styled(SmallDots)`
   position: absolute;

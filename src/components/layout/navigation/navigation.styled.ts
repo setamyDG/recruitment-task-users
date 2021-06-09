@@ -1,8 +1,5 @@
-import React, { forwardRef } from 'react';
-import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import { ReactComponent as InfoIcon } from '@assets/icons/info.svg';
-import { ReactComponent as UsersIcon } from '@assets/icons/users.svg';
+import { NavLink } from 'react-router-dom';
 import zIndex from '@styles/zIndex';
 
 const StyledNav = styled.nav`
@@ -55,24 +52,4 @@ const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
   ${baseLinkStyles}
 `;
 
-type Ref = HTMLDivElement;
-type NavigationProps = {
-  ref: HTMLDivElement;
-};
-
-const Navigation = forwardRef<Ref, NavigationProps>((_, ref) => (
-  <StyledNav ref={ref}>
-    <div>
-      <StyledNavLink exact to='/'>
-        <UsersIcon />
-      </StyledNavLink>
-      <StyledNavLink to='/information'>
-        <InfoIcon />
-      </StyledNavLink>
-    </div>
-  </StyledNav>
-));
-
-Navigation.displayName = 'Navigation';
-
-export default Navigation;
+export { StyledNav, StyledNavLink };

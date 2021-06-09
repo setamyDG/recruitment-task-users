@@ -1,10 +1,5 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
-
-const StyledTitle = styled.h1`
-  margin-bottom: 50px;
-  color: ${({ theme }) => theme.colors.darkGray};
-`;
+import StyledTitle from './page-title.styled';
 
 type Props = {
   title: string;

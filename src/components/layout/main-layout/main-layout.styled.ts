@@ -1,5 +1,5 @@
-import media from '@styles/media';
 import styled from 'styled-components';
+import { media } from '@styles';
 
 export default styled.main<{ headerHeight: number; navigationWidth: number }>`
   margin-top: ${({ headerHeight }) => headerHeight}px;

@@ -1,8 +1,8 @@
 import React, { createRef, FC, useEffect, useState } from 'react';
-import Header from './header';
-import Footer from './footer';
+import { Footer } from '../footer';
+import { Header } from '../header';
+import { Navigation } from '../navigation';
 import Main from './main-layout.styled';
-import Navigation from './navigation';
 
 const MainLayout: FC = ({ children }) => {
   const headerRef = createRef<HTMLDivElement>();

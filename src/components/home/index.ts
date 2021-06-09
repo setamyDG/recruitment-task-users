@@ -1,3 +1,3 @@
-export { default as Searchbar } from './searchbar';
-export { default as GridContainer } from './grid-container';
-export { default as Card } from './card';
+export * from './card';
+export * from './grid-container';
+export * from './searchbar';

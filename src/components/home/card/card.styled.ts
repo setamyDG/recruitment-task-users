@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import zIndex from '@styles/zIndex';
-import media from '@styles/media';
+import { media } from '@styles';
 
 const StyledCard = styled.div`
   border: 2px solid ${({ theme }) => theme.colors.lightGray};

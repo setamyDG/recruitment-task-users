@@ -27,7 +27,7 @@ const Card: FC<Props> = ({ id, name, username, phone, company, email }) => {
   const namesRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
-    if (cardRef) {
+    if (cardRef && namesRef) {
       fromLeftToRight(cardRef?.current as HTMLElement, 1.2);
       fromTopToBottom(namesRef?.current as HTMLElement, 1.2);
     }

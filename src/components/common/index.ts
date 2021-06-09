@@ -1,7 +1,5 @@
 export { default as Logo } from './logo';
 export { default as SocialMedia } from './social-media';
 export { default as Container } from './container';
-export { default as Searchbar } from './searchbar';
-export { default as Card } from './card';
 export { default as PageTitle } from './page-title';
 export { default as Section } from './section';

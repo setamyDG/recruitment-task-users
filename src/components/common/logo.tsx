@@ -1,13 +1,5 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
-
-const Wrapper = styled.div`
-  padding: 5px 15px;
-  text-align: center;
-  border: 1px solid ${({ theme }) => theme.colors.darkGray};
-  background: ${({ theme }) => theme.colors.white};
-  color: ${({ theme }) => theme.colors.black};
-`;
+import Wrapper from './logo.styled';
 
 const Logo: FC = () => (
   <Wrapper>

@@ -1,42 +1,69 @@
-import React, { FC } from 'react';
-import { Layout } from '@components/layout';
-import { Container } from '@components/common';
+import React, { ChangeEvent, FC, useState } from 'react';
 import styled from 'styled-components';
-import Card from '@components/common/card';
-import SearchbarComponent from '@components/common/searchbar';
-
-const Section = styled.section`
-  padding: 40px 0px;
-`;
+import { useQuery } from 'react-query';
+import { Layout } from '@components/layout';
+import { Container, Card, Searchbar, PageTitle, Section } from '@components/common';
+import media from '@styles/media';
+import { getUsers, User } from '@utils/getUsers';
 
 const GridContainer = styled.div`
   display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-gap: 25px;
   margin-top: 50px;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  grid-template-rows: repeat(1, minmax(450px, auto));
-  grid-gap: 18px;
-  grid-template-areas: 'card1 card1 card2 card2 card3 card3';
+
+  ${media.custom(1250)} {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  ${media.tablet} {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  ${media.phone} {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 `;
 
-const StyledTitle = styled.h1`
-  margin-bottom: 50px;
-  color: ${({ theme }) => theme.colors.lightGray};
-`;
+const Home: FC = () => {
+  const [searchValue, setSearchValue] = useState('');
+  const { data } = useQuery<User, Error>('fetchUsers', () => getUsers());
 
-const Home: FC = () => (
-  <Layout>
-    <Section>
-      <Container>
-        <StyledTitle>USERS</StyledTitle>
-        <SearchbarComponent placeholder='Search' value='' onChange={() => undefined} handleDelete={() => undefined} />
-        <GridContainer>
-          <Card gridArea='card1' />
-          <Card gridArea='card2' />
-          <Card gridArea='card3' />
-        </GridContainer>
-      </Container>
-    </Section>
-  </Layout>
-);
+  const handleOnChangeSearchbar = (e: ChangeEvent<HTMLInputElement>): void => {
+    setSearchValue(e.target.value);
+  };
+
+  const newData = data?.filter(({ name }) => (name as string).toUpperCase().includes(searchValue.toUpperCase()));
+
+  return (
+    <Layout>
+      <Section>
+        <Container>
+          <PageTitle title='Users' />
+          <Searchbar
+            value={searchValue}
+            onChange={handleOnChangeSearchbar}
+            handleDelete={() => {
+              setSearchValue('');
+            }}
+          />
+          <GridContainer>
+            {newData?.map(({ id, name, username, email, phone, company: { name: companyName } }) => (
+              <Card
+                key={id}
+                id={id}
+                name={name}
+                username={username}
+                email={email}
+                phone={phone}
+                company={companyName}
+              />
+            ))}
+          </GridContainer>
+        </Container>
+      </Section>
+    </Layout>
+  );
+};
 
 export default Home;

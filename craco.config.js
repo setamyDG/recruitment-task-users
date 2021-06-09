@@ -8,6 +8,8 @@ module.exports = {
       '@assets': path.resolve(__dirname, 'src/assets/'),
       '@styles': path.resolve(__dirname, 'src/styles/'),
       '@views': path.resolve(__dirname, 'src/views/'),
+      '@utils': path.resolve(__dirname, 'src/utils/'),
+      '@constants': path.resolve(__dirname, 'src/constants/'),
     },
   },
   jest: {
@@ -17,6 +19,8 @@ module.exports = {
         '^@assets(.*)$': '<rootDir>/src/assets$1',
         '^@styles(.*)$': '<rootDir>/src/styles$1',
         '^@views(.*)$': '<rootDir>/src/views$1',
+        '^@utils(.*)$': '<rootDir>/src/utils$1',
+        '^@constants(.*)$': '<rootDir>/src/constants$1',
       },
     },
   },

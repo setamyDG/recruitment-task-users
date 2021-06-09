@@ -43,12 +43,12 @@ const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
   }
 
   path {
-    transition: 0.5s;
+    transition: 0.3s;
   }
 
   &:hover {
     path {
-      fill: ${({ theme }) => theme.colors.black};
+      fill: ${({ theme }) => theme.colors.darkGray};
     }
   }
 

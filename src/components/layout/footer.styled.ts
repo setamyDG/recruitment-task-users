@@ -33,6 +33,7 @@ const StyledFooter = styled.footer`
 const Name = styled.p`
   font-size: 0.825rem;
   margin-top: 25px;
+  font-weight: 300;
 `;
 
 const Year = styled.p`

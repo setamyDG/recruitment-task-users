@@ -15,7 +15,7 @@ export default createGlobalStyle`
   }
 
   a {
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
     color: white;
     text-decoration: none;
@@ -51,10 +51,6 @@ export default createGlobalStyle`
     margin-bottom: 10px;
   }
 
-  li {
-    margin-left: 20px;
-  }
-
   img {
     display: block;
     object-fit: cover;
@@ -70,10 +66,13 @@ export default createGlobalStyle`
 
   p {
     line-height: 24px;
+    font-weight: 300;
   }
 
   li {
     line-height: 1.6;
+    margin-left: 20px;
+    font-weight: 300;
   }
 
   strong {

@@ -14,7 +14,7 @@ const Header = forwardRef<Ref, HeaderProps>((_, ref) => (
     <NavLink to='/'>
       <Logo />
     </NavLink>
-    <Title>RECRUITMENT TASK</Title>
+    <Title>Recruitment task</Title>
   </StyledHeader>
 ));
 

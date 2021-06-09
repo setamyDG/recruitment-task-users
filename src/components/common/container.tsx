@@ -1,8 +1,5 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
+import StyledContainer from './container.styled';
 
-const StyledContainer = styled.div`
-  margin: 0px 65px;
-`;
 const Container: FC = ({ children }) => <StyledContainer>{children}</StyledContainer>;
 export default Container;

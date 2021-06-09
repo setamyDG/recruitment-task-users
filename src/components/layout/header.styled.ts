@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import zIndex from '@styles/zIndex';
+import media from '@styles/media';
 
 const StyledHeader = styled.header`
   padding: 15px 30px;
@@ -12,14 +13,20 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   z-index: ${zIndex.level9};
+  ${media.tablet} {
+    justify-content: center;
+  }
 `;
 
 const Title = styled.p`
   position: absolute;
-  font-size: 0.825rem;
+  font-family: 'Inter' sans-serif;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  ${media.tablet} {
+    display: none;
+  }
 `;
 
 export { StyledHeader, Title };

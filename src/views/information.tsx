@@ -7,10 +7,10 @@ import SEO from '@components/seo';
 
 const Information: FC = () => (
   <>
-    <SEO title='Information' />
+    <SEO title='Recruitment task - Informations' />
     <Section>
       <Container>
-        <PageTitle title='Recruitment task - Informations' />
+        <PageTitle title='Informations' />
         {steps.map(({ id, description, link }) => (
           <ul key={id}>
             <li>

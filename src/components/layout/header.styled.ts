@@ -3,7 +3,7 @@ import zIndex from '@styles/zIndex';
 import media from '@styles/media';
 
 const StyledHeader = styled.header`
-  padding: 15px 30px;
+  padding: 15px 10px;
   box-shadow: ${({ theme }) => theme.boxShadow.dp_1};
   background: ${({ theme }) => theme.colors.lightGray};
   display: flex;

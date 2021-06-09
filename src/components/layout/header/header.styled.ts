@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import zIndex from '@styles/zIndex';
-import { media } from '@styles';
+import { media, zIndex } from '@styles';
 
 const StyledHeader = styled.header`
   padding: 15px 10px;

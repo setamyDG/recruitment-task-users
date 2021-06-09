@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import zIndex from '@styles/zIndex';
+import { zIndex } from '@styles';
 
 const StyledNav = styled.nav`
   position: fixed;

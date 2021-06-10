@@ -21,7 +21,7 @@ To run this application you need to run `npm install`, `npm start` or just visit
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/norbertsuski">
+      <a href="https://github.com/setamyDG">
         <img src="https://avatars2.githubusercontent.com/u/37123078?v=4" width="100px;" alt="Daniel Gola"/>
         <br />
         <sub><b>Daniel Gola</b></sub>
